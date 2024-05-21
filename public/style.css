@@ -625,6 +625,26 @@ html{
   height: 93vh;
 }
 
+.h-\[90vh\]{
+  height: 90vh;
+}
+
+.h-\[80vh\]{
+  height: 80vh;
+}
+
+.h-\[85vh\]{
+  height: 85vh;
+}
+
+.h-\[82vh\]{
+  height: 82vh;
+}
+
+.h-\[81vh\]{
+  height: 81vh;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -889,4 +909,10 @@ html{
 
 .hover\:to-blue-700:hover{
   --tw-gradient-to: #1d4ed8 var(--tw-gradient-to-position);
+}
+
+@media (min-width: 640px){
+  .sm\:h-\[94vh\]{
+    height: 94vh;
+  }
 }
