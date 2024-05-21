@@ -85,6 +85,9 @@ boxes.forEach(e=>{
 document.querySelector("#again").addEventListener("click",()=>{
     isGameOver=false;
     turn="X";
+    chanceO.classList.remove("bg-blue-500",'text-white');
+    chanceX.classList.add("bg-red-500",'text-white');
+
     boxes.forEach(e=>{
         e.innerHTML="";
         e.classList.remove("bg-red-500","bg-blue-500","text-white","hover:bg-blue-500","hover:bg-red-500")
