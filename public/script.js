@@ -42,10 +42,11 @@ const checkWin=()=>{
             document.querySelector("#again").classList.remove("hidden");
             let bg;
             (turn==="X")? bg="bg-red-500":bg="bg-blue-500";
+            let hoverBg = turn === "X" ? "hover:bg-red-500" : "hover:bg-blue-500";
 
-            b0.classList.add(bg,"text-white","hover:bg-blue-500")
-            b1.classList.add(bg,"text-white","hover:bg-blue-500")
-            b2.classList.add(bg,"text-white","hover:bg-blue-500")
+            b0.classList.add(bg,"text-white",hoverBg)
+            b1.classList.add(bg,"text-white",hoverBg)
+            b2.classList.add(bg,"text-white",hoverBg)
         }
 
     }
@@ -86,7 +87,7 @@ document.querySelector("#again").addEventListener("click",()=>{
     turn="X";
     boxes.forEach(e=>{
         e.innerHTML="";
-        e.classList.remove("bg-red-500","bg-blue-500","text-white","hover:bg-blue-500")
+        e.classList.remove("bg-red-500","bg-blue-500","text-white","hover:bg-blue-500","hover:bg-red-500")
     })
     document.querySelector("#results").innerHTML= "";
     document.querySelector("#again").classList.add("hidden");
