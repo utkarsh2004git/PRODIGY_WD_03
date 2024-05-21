@@ -115,8 +115,11 @@ document.querySelector("#again").addEventListener("click", () => {
     });
     document.querySelector("#results").innerHTML = "";
     document.querySelector("#again").classList.add("hidden");
+    document.querySelector("#comp").disabled=false;
 });
 
 document.querySelector("#comp").addEventListener("change", () => {
     playWithComputer = document.querySelector("#comp").checked;
+    document.querySelector("#comp").disabled=true;
+
 });
