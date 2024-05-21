@@ -61,7 +61,7 @@ const checkDraw = () => {
         if (isDraw) {
             isGameOver = true;
             document.querySelector("#results").innerHTML = "It's a Draw";
-            document.querySelector("#again").classList.remove("hidden");
+            // document.querySelector("#again").classList.remove("hidden");
         }
     }
 }
@@ -114,7 +114,7 @@ document.querySelector("#again").addEventListener("click", () => {
         e.classList.remove("bg-red-500", "bg-blue-500", "text-white", "hover:bg-blue-500", "hover:bg-red-500");
     });
     document.querySelector("#results").innerHTML = "";
-    document.querySelector("#again").classList.add("hidden");
+    // document.querySelector("#again").classList.add("hidden");
     document.querySelector("#comp").disabled=false;
 });
 
